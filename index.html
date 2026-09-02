@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shokat Ali Motors | Premium Car Showroom</title>
+    <meta name="description" content="Shokat Ali Motors - Premium new and used cars. Best deals, financing available.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-car"></i>
+                <span>Shokat Ali <strong>Motors</strong></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#inventory">Cars</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/923063178718" class="btn btn-whatsapp nav-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Find Your Dream Car<br>at <span>Shokat Ali Motors</span></h1>
+            <p>Premium new & used cars • Best prices • Easy financing available</p>
+            <div class="hero-btns">
+                <a href="#inventory" class="btn btn-primary">View Cars</a>
+                <a href="#contact" class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Built on trust and quality</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Welcome from Shokat Ali</h3>
+                    <p>
+                        I’m <strong>Shokat Ali</strong>, and I founded <strong>Shokat Ali Motors</strong> with one simple goal — 
+                        every customer should get the right car at the right price with complete honesty.
+                    </p>
+                    <p>
+                        We deal in both new and used vehicles. Every car is thoroughly inspected, 
+                        and you get fully transparent dealing. Financing assistance is also available.
+                    </p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h4>100+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Cars in Stock</p>
+                        </div>
+                        <div class="stat">
+                            <h4>100%</h4>
+                            <p>Satisfaction Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-car-side"></i>
+                        <p>Premium Showroom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inventory Section -->
+    <section class="inventory" id="inventory">
+        <div class="container">
+            <div class="section-header">
+                <h2>Available Cars</h2>
+                <p>Our current stock</p>
+            </div>
+            <div class="cars-grid">
+                <!-- Car 1 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge">New</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Toyota Corolla 2024</h3>
+                        <p class="car-meta">1.6L • Automatic • Petrol</p>
+                        <div class="car-price">
+                            <span class="price">PKR 5,850,000</span>
+                            <span class="old-price">PKR 6,100,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 2 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge used">Used</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Honda Civic 2021</h3>
+                        <p class="car-meta">1.5L Turbo • Automatic • 32,000 km</p>
+                        <div class="car-price">
+                            <span class="price">PKR 4,275,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 3 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge">New</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Suzuki Swift 2024</h3>
+                        <p class="car-meta">1.2L • Manual • Petrol</p>
+                        <div class="car-price">
+                            <span class="price">PKR 3,290,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 4 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge used">Used</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Toyota Fortuner 2020</h3>
+                        <p class="car-meta">2.8L Diesel • 4x4 • 45,000 km</p>
+                        <div class="car-price">
+                            <span class="price">PKR 9,500,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 5 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge">New</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Kia Sportage 2024</h3>
+                        <p class="car-meta">2.0L • Automatic • AWD</p>
+                        <div class="car-price">
+                            <span class="price">PKR 7,850,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+
+                <!-- Car 6 -->
+                <div class="car-card">
+                    <div class="car-img">
+                        <div class="car-badge used">Used</div>
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="car-info">
+                        <h3>Honda City 2019</h3>
+                        <p class="car-meta">1.5L • Automatic • 58,000 km</p>
+                        <div class="car-price">
+                            <span class="price">PKR 2,890,000</span>
+                        </div>
+                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="inventory-note">
+                <p><i class="fas fa-info-circle"></i> The cars above are sample listings. Contact us for actual stock and latest prices.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Everything you need under one roof</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-car"></i></div>
+                    <h3>New Cars</h3>
+                    <p>Brand new vehicles from all major brands at the best prices.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-redo"></i></div>
+                    <h3>Used Cars</h3>
+                    <p>Thoroughly inspected, certified pre-owned vehicles.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-hand-holding-usd"></i></div>
+                    <h3>Financing</h3>
+                    <p>Easy installment plans. We assist with bank loan processing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Exchange</h3>
+                    <p>Trade in your old car and upgrade to a new one.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+                    <h3>Registration</h3>
+                    <p>Help with transfer, registration, and all documentation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fas fa-tools"></i></div>
+                    <h3>Servicing</h3>
+                    <p>Maintenance and repairs through trusted workshop partners.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Fill the form or reach us directly via call / WhatsApp</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <div>
+                            <h4>Owner</h4>
+                            <p>Shokat Ali</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+92 306 3178718</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+92 306 3178718</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Main Road, Your City, Pakistan<br>
+                            <small>(Please provide the actual address)</small></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Timings</h4>
+                            <p>Mon – Sat: 10:00 AM – 8:00 PM<br>Sunday: 11:00 AM – 6:00 PM</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/923063178718?text=Hello%20Shokat%20Ali%20Motors,%20I%20need%20information%20about%20a%20car" 
+                       class="btn btn-whatsapp full" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Message on WhatsApp
+                    </a>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="interest">
+                            <option value="">What are you interested in?</option>
+                            <option value="new">New Car</option>
+                            <option value="used">Used Car</option>
+                            <option value="finance">Financing</option>
+                            <option value="exchange">Exchange</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="4" placeholder="Write your message..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <i class="fas fa-car"></i>
+                        <span>Shokat Ali <strong>Motors</strong></span>
+                    </a>
+                    <p>Promise of trust, quality and the best dealing.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#inventory">Cars</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +92 306 3178718</p>
+                    <p><i class="fab fa-whatsapp"></i> WhatsApp Available</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shokat Ali Motors. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/923063178718" class="floating-whatsapp" target="_blank" title="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
