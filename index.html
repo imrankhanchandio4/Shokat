@@ -23,6 +23,7 @@
                 <li><a href="#inventory">Cars</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#admin" id="adminNavLink" style="display:none;">Admin</a></li>
             </ul>
             <a href="https://wa.me/923063178718" class="btn btn-whatsapp nav-btn" target="_blank">
                 <i class="fab fa-whatsapp"></i> WhatsApp
@@ -82,7 +83,7 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
+                    <div class="image-placeholder" id="aboutImage">
                         <i class="fas fa-car-side"></i>
                         <p>Premium Showroom</p>
                     </div>
@@ -98,106 +99,11 @@
                 <h2>Available Cars</h2>
                 <p>Our current stock</p>
             </div>
-            <div class="cars-grid">
-                <!-- Car 1 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge">New</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Toyota Corolla 2024</h3>
-                        <p class="car-meta">1.6L • Automatic • Petrol</p>
-                        <div class="car-price">
-                            <span class="price">PKR 5,850,000</span>
-                            <span class="old-price">PKR 6,100,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Car 2 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge used">Used</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Honda Civic 2021</h3>
-                        <p class="car-meta">1.5L Turbo • Automatic • 32,000 km</p>
-                        <div class="car-price">
-                            <span class="price">PKR 4,275,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Car 3 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge">New</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Suzuki Swift 2024</h3>
-                        <p class="car-meta">1.2L • Manual • Petrol</p>
-                        <div class="car-price">
-                            <span class="price">PKR 3,290,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Car 4 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge used">Used</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Toyota Fortuner 2020</h3>
-                        <p class="car-meta">2.8L Diesel • 4x4 • 45,000 km</p>
-                        <div class="car-price">
-                            <span class="price">PKR 9,500,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Car 5 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge">New</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Kia Sportage 2024</h3>
-                        <p class="car-meta">2.0L • Automatic • AWD</p>
-                        <div class="car-price">
-                            <span class="price">PKR 7,850,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
-
-                <!-- Car 6 -->
-                <div class="car-card">
-                    <div class="car-img">
-                        <div class="car-badge used">Used</div>
-                        <i class="fas fa-car"></i>
-                    </div>
-                    <div class="car-info">
-                        <h3>Honda City 2019</h3>
-                        <p class="car-meta">1.5L • Automatic • 58,000 km</p>
-                        <div class="car-price">
-                            <span class="price">PKR 2,890,000</span>
-                        </div>
-                        <a href="#contact" class="btn btn-sm">Inquire Now</a>
-                    </div>
-                </div>
+            <div class="cars-grid" id="carsGrid">
+                <!-- Cars will be rendered by JavaScript -->
             </div>
             <div class="inventory-note">
-                <p><i class="fas fa-info-circle"></i> The cars above are sample listings. Contact us for actual stock and latest prices.</p>
+                <p><i class="fas fa-info-circle"></i> Contact us for actual stock and latest prices.</p>
             </div>
         </div>
     </section>
@@ -321,6 +227,82 @@
         </div>
     </section>
 
+    <!-- Admin Section -->
+    <section class="admin-section" id="admin">
+        <div class="container">
+            <div class="section-header">
+                <h2>Admin Panel</h2>
+                <p>Manage cars and upload pictures</p>
+            </div>
+
+            <!-- Login Form -->
+            <div id="adminLoginBox" class="admin-box">
+                <h3><i class="fas fa-lock"></i> Admin Login</h3>
+                <form id="adminLoginForm">
+                    <div class="form-group">
+                        <input type="password" id="adminPassword" placeholder="Enter Admin Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary full">Login</button>
+                    <p class="admin-hint">Default password: <strong>admin123</strong></p>
+                </form>
+            </div>
+
+            <!-- Admin Dashboard -->
+            <div id="adminDashboard" style="display:none;">
+                <div class="admin-header">
+                    <h3>Welcome Admin</h3>
+                    <button class="btn btn-sm" id="logoutBtn">Logout</button>
+                </div>
+
+                <div class="admin-box">
+                    <h3><i class="fas fa-plus-circle"></i> Add New Car</h3>
+                    <form id="addCarForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="carTitle" placeholder="Car Name (e.g. Toyota Corolla 2024)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="carMeta" placeholder="Details (e.g. 1.6L • Automatic • Petrol)" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="carPrice" placeholder="Price (e.g. PKR 5,850,000)" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="carOldPrice" placeholder="Old Price (optional)">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id="carBadge">
+                                    <option value="New">New</option>
+                                    <option value="Used">Used</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label style="font-size:13px;color:#64748b;">Car Image:</label>
+                                <input type="file" id="carImage" accept="image/*">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Car</button>
+                    </form>
+                </div>
+
+                <div class="admin-box">
+                    <h3><i class="fas fa-car"></i> Manage Existing Cars</h3>
+                    <div id="adminCarsList" class="admin-cars-list"></div>
+                </div>
+
+                <div class="admin-box">
+                    <h3><i class="fas fa-image"></i> Update About Image</h3>
+                    <input type="file" id="aboutImageUpload" accept="image/*">
+                    <p class="admin-hint">This image will show in the About section</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -348,7 +330,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Shokat Ali Motors. All rights reserved.</p>
+                <p>&copy; 2026 Shokat Ali Motors. All rights reserved. | <a href="#admin" id="footerAdminLink" style="color:#94a3b8;">Admin Login</a></p>
             </div>
         </div>
     </footer>
